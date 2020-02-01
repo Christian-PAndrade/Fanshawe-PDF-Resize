@@ -1,4 +1,4 @@
-# Fanshawe-PDF-Resize
+# Fanshawe PDF Resize
 Changes the size of fanshawe's pdf to 1000px
 
 Have you ever wondered, why did Fanshawe make their PDF visualizer so small? 
