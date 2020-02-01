@@ -9,7 +9,7 @@ btn.style.text;
 btn.onclick = () => {
   chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
     chrome.tabs.executeScript(tabs[0].id, {
-      code: `document.getElementsByClassName("d2l-documentViewer-show-render")[0].style.height = "1000px"`
+      file: "./pdfResize.js"
     });
   });
 };
