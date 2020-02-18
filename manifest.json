@@ -1,7 +1,7 @@
 {
   "author": "Christian Penner Andrade",
   "name": "Fanshawe PDF but Readable",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Resizes Fanshawe PDF window",
   "permissions": ["storage", "declarativeContent", "activeTab"],
   "background": {
