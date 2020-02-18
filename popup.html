@@ -12,8 +12,19 @@
       }
     </style>
   </head>
-  <body>
-    <button id="resizeBtn">Re-size</button>
+  <body style="display: flex; height: 100%; flex-direction: column;">
+    <input
+      type="range"
+      min="500"
+      max="1500"
+      value="1000"
+      name="sliderInput"
+      id="sliderInput"
+    />
+    <p id="pSliderValue" style="text-align: center;">1000 px</p>
+    <button id="resizeBtn" style="align-self: center;">Re-size</button>
+    <script src="updateSlider.js"></script>
+    <script src="updatePDF.js"></script>
     <script src="popup.js"></script>
   </body>
 </html>
