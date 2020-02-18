@@ -11,6 +11,10 @@ if (document.getElementsByClassName("d2l-documentViewer-show-render")[0]) {
     .getElementsByClassName("d2l-documentViewer-show-render")[0]
     .setAttribute("id", "scrollToMe");
 
-  // scroll to it
-  document.getElementById("scrollToMe").scrollIntoView();
+  // scroll to it -- have to set timeout for some reason
+  setTimeout(() => {
+    document
+      .getElementById("scrollToMe")
+      .scrollIntoView({ behavior: "smooth" });
+  }, 100);
 }
