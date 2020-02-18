@@ -1,14 +1,20 @@
 // If a pdf element exists, make it bigger
 if (document.getElementsByClassName("d2l-documentViewer-show-render")[0]) {
-  document.getElementsByClassName(
-    "d2l-documentViewer-show-render"
-  )[0].style.height = "1000px";
+  chrome.storage.sync.get("size", data => {
+    document.getElementsByClassName(
+      "d2l-documentViewer-show-render"
+    )[0].style.height = data.size + "px";
+  });
 
   // Adds an id to scroll to it
   document
     .getElementsByClassName("d2l-documentViewer-show-render")[0]
     .setAttribute("id", "scrollToMe");
 
-  // scroll to it
-  document.getElementById("scrollToMe").scrollIntoView();
+  // scroll to it -- have to set timeout for some reason
+  setTimeout(() => {
+    document
+      .getElementById("scrollToMe")
+      .scrollIntoView({ behavior: "smooth" });
+  }, 100);
 }

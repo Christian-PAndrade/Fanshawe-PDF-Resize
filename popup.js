@@ -3,7 +3,9 @@ let btn = document.getElementById("resizeBtn");
 
 // Add some styling
 btn.style.backgroundColor = "cornflowerblue";
-btn.style.text;
+btn.style.height = "30px";
+btn.style.width = "70px";
+btn.style.color = "white";
 
 // Adds onclick which actually changes the size of the pdf
 btn.onclick = () => {
