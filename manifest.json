@@ -1,6 +1,6 @@
 {
   "name": "Fanshawe PDF but Readable",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Makes Fanshawe PDF window 1000px",
   "permissions": ["storage", "declarativeContent", "activeTab"],
   "background": {
