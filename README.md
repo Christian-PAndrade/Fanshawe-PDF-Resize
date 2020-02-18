@@ -14,5 +14,5 @@ Well, wonder and wish no more! With this Chrome extension, you can resize Fansha
    - 'viewContent
 2. Locate the extension in you browser extensions
    - Look for the extension with an 'F' in it
-3. Click the extension and then click the re-size button
+3. Click the extension, select the size and then click the re-size button
 4. Enjoy
